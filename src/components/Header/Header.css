@@ -7,10 +7,11 @@ header.header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .header__content {
-  flex: 2;
+  flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,8 +38,15 @@ header.header {
 }
 
 .header__divider {
-  flex: 1;
+  flex: 2;
 }
 
-/* mockup img = https://puu.sh/Ay8Oc/7f42559378.png */
-
+.header__img {
+  height: 80rem;
+  width: 80rem;
+  position: static;
+  background-image: url("https://puu.sh/Ay8Oc/7f42559378.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
