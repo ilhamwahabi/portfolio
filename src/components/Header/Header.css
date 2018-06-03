@@ -1,6 +1,6 @@
 header.header {
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   background: #3E3879;  
   color: white;
   display: flex;

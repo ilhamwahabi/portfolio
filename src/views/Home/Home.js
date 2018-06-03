@@ -11,7 +11,10 @@ import './Home.css'
 export default class Home extends React.Component {
   render(){
     return (
-      <Header />
+      <React.Fragment>
+        <Header />
+        <Footer />
+      </React.Fragment>
     )
   }
 }
