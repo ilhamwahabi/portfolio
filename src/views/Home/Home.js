@@ -15,6 +15,7 @@ export default class Home extends React.Component {
         <Navbar />
         <Header />
         <Desc />
+        <Work />
         <Footer />
       </React.Fragment>
     )

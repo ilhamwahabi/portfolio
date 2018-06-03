@@ -17,8 +17,6 @@ export default class Navbar extends React.Component {
   }
 
   handleScroll = () => {
-    var minScroll = window.innerHeight * 1;
-  
     if (
       window.scrollY > this.state.scrolledHeight
     ) {
