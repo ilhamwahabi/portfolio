@@ -1,0 +1,53 @@
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  margin: auto;
+  width: 100vw;
+  color: white;
+}
+
+.navbar__row {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 2.5rem;
+}
+
+.navbar__logo {
+  font-size: 2rem;
+  font-weight: 700;
+  flex: 2;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navbar__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.navbar__options p {
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: .1rem solid transparent;
+  transition: border .5s;
+}
+
+.navbar__options p:hover {
+  border-bottom: .1rem solid white;
+}
+
+.divider {
+  flex: 1;
+}
+
+.divider5 {
+  flex: 5;
+}
