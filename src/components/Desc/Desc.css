@@ -1,0 +1,19 @@
+section.desc {
+  max-width: 100vw;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc__title {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.desc__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

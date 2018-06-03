@@ -13,6 +13,7 @@ export default class Home extends React.Component {
     return (
       <React.Fragment>
         <Header />
+        <Desc />
         <Footer />
       </React.Fragment>
     )
