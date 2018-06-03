@@ -1,4 +1,4 @@
-nav.navbar {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,6 +6,11 @@ nav.navbar {
   margin: auto;
   width: 100vw;
   color: white;
+  transition: top .5s;
+}
+
+.navbar__hide {
+  top: -10rem;
 }
 
 .navbar__row {

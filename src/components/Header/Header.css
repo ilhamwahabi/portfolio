@@ -15,7 +15,7 @@ header.header {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding-top: 5rem;
+  padding-top: 6rem;
 }
 
 .header__content {
@@ -69,11 +69,15 @@ header.header {
 }
 
 @keyframes bounce {
-  from {
+  0% {
     transform: translateY(-1rem);
   }
 
-  to {
-    transform: translateY(1rem);
+  50% {
+    transform: translateY(1rem);    
+  }
+
+  100% {
+    transform: translateY(-1rem);
   }
 }
