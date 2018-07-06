@@ -26,8 +26,16 @@ header.header {
   align-items: center;
 }
 
+.header__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .header__title {
   font-size: 5rem;
+  margin-bottom: .5rem;
 }
 
 .header__subtitle, .header__name {
@@ -79,5 +87,31 @@ header.header {
 
   100% {
     transform: translateY(-1rem);
+  }
+}
+
+@media (max-width: 720px) {
+  header.header {
+    justify-content: center;
+  }
+
+  .header__row {
+    flex-direction: column;
+  }
+
+  .header__img {
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .header__main {
+    align-items: center;
+  }
+
+  .header__title {
+    margin-bottom: 2.5rem;
+    font-size: 4.5rem;
+    max-width: 75%;
+    text-align: center;
   }
 }
