@@ -13,6 +13,9 @@ export default class Desc extends React.Component {
         <p className="desc__subtitle">
           I hope you like what i had done :) 
         </p>
+        <p className="desc__subtitle">
+          Feel free to contact me 
+        </p>
       </section>
     )
   }

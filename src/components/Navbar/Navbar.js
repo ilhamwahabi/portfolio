@@ -35,7 +35,7 @@ export default class Navbar extends React.Component {
           <p className="navbar__logo">Amazing Things</p>
           <div className="divider5"></div>          
           <div className="navbar__options">
-            <a target="_blank" href="https://ilhamwahabigx.github.io"><p>Profile</p></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://ilhamwahabigx.github.io"><p>Profile</p></a>
             <p>Filter</p>
           </div>
           <div className="divider"></div>          
