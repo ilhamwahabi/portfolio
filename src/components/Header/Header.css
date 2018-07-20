@@ -115,3 +115,22 @@ header.header {
     text-align: center;
   }
 }
+
+@media (max-width: 380px) {
+  .header__row {
+    padding-top: 10rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .header__row {
+    padding-top: 15rem;
+  }
+
+  .header__title {
+    margin-bottom: 2.5rem;
+    font-size: 3.5rem;
+    max-width: 75%;
+    text-align: center;
+  }
+}
