@@ -72,6 +72,11 @@
     max-width: 75%;
     margin-bottom: 5rem;
   }
+
+  .work__btn {
+    padding: 1rem 3rem;
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media (max-width: 340px) {

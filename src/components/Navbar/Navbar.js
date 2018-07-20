@@ -18,7 +18,7 @@ export default class Navbar extends React.Component {
 
   handleScroll = () => {
     if (
-      window.scrollY > this.state.scrolledHeight
+      window.scrollY  > this.state.scrolledHeight
     ) {
       this.setState({ scrollClass: 'navbar__hide' })      
     } else {
