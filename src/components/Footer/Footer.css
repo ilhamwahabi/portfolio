@@ -1,4 +1,4 @@
-footer.footer {
+.footer {
   min-height: 15vh;
   max-width: 100vw;
   background-color: #F1F1F1;
@@ -13,6 +13,10 @@ footer.footer {
   font-size: 1.5rem;
   text-align: center;
   flex: 2;
+}
+
+.footer__copy br {
+  display: none;
 }
 
 .footer__link {
@@ -45,4 +49,53 @@ footer.footer {
 
 .divider3 {
   flex: 3;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 0 1.5rem;
+  }
+
+  .footer__copy {
+    font-size: 2rem;
+    text-align: left;
+    flex: 2;
+  }
+
+  .footer__copy br {
+    display: block;
+  }
+
+  .footer__link {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .footer__link p {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .footer__link .footer__link-cv {
+    display: none;
+  }
+
+  .divider3 {
+    flex: none;
+  }
+
+  .divider1 {
+    flex: none;
+  }
+}
+
+@media (max-width: 361px) {
+  .footer__copy {
+    font-size: 1.5rem;
+  }
+
+  .footer__link p {
+    font-size: 1.5rem;
+  }
 }

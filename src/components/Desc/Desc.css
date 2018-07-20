@@ -20,11 +20,18 @@ section.desc {
 
 @media (max-width: 480px) {
   .desc__title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
   }
 
   .desc__subtitle {
     width: 75%;
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 361px) {
+  .desc__title {
+    font-size: 2.5rem;
   }
 }
