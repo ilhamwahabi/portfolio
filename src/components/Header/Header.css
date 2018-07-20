@@ -90,7 +90,7 @@ header.header {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 480px) {
   header.header {
     justify-content: center;
   }

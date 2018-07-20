@@ -56,3 +56,30 @@
 .divider5 {
   flex: 5;
 }
+
+@media (max-width: 480px) {
+  .navbar__row {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar__logo {
+    text-align: center;
+    flex: 1;
+  }
+
+  .navbar__options {
+    flex: none;
+    display: none;
+  }
+  
+  .divider {
+    flex: none;
+    display: none;
+  }
+  
+  .divider5 {
+    flex: none;
+    display: none;
+  }
+}
