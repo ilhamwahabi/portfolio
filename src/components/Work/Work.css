@@ -53,3 +53,40 @@
 .divider {
   flex: 1;
 }
+
+@media (max-width: 480px) {
+  .work {
+    height: 100vh;
+  }
+
+  .work__img img {
+    max-width: 75%;
+  }
+
+  .work__title {
+    font-size: 3rem;
+  }
+
+  .work__desc {
+    font-size: 2rem;
+    max-width: 75%;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .work__title {
+    font-size: 2rem;
+  }
+
+  .work__category {
+    font-size: 1.5rem;
+    margin: .5rem 0 2.5rem 0;
+  }
+
+  .work__desc {
+    font-size: 1.5rem;
+    max-width: 75%;
+    margin-bottom: 2.5rem;
+  }
+}
