@@ -17,3 +17,14 @@ section.desc {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 480px) {
+  .desc__title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .desc__subtitle {
+    width: 75%;
+  }
+}
