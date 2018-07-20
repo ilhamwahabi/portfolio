@@ -37,7 +37,13 @@
   flex: 1;
 }
 
-.navbar__options p {
+.navbar__options a {
+  display: inline-block;
+  color: white;
+  text-decoration: transparent;
+}
+
+.navbar__options p, .navbar__options a {
   font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
