@@ -57,7 +57,7 @@
   }
 
   .footer__copy {
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-align: left;
     flex: 2;
   }
@@ -74,7 +74,7 @@
 
   .footer__link p {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .footer__link .footer__link-cv {
