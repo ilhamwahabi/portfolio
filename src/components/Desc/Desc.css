@@ -23,10 +23,11 @@ section.desc {
     font-size: 3rem;
     margin-bottom: 3rem;
   }
-
+  
   .desc__subtitle {
     width: 75%;
     font-size: 1.75rem;
+    text-align: center;
   }
 }
 

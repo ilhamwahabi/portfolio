@@ -58,7 +58,7 @@
 
   .footer__copy {
     font-size: 1.9rem;
-    text-align: left;
+    /* text-align: left; */
     flex: 2;
   }
 

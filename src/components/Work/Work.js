@@ -8,7 +8,7 @@ export default class Work extends React.Component {
       <main className="work">
         <div className="divider"></div>      
         <div className="work__img">
-          <img src="https://puu.sh/Ay8Oc/7f42559378.png" alt="app image" />
+          <img src="https://puu.sh/Ay8Oc/7f42559378.png" alt="App Home" />
         </div>
         <h1 className="work__title">Millenium Hangman</h1>
         <h3 className="work__category">Web Game</h3>

@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
     return (
       <footer className="footer">
         <div className="divider1"></div>      
-        <p className="footer__copy">&copy; 2018 Ilham Wahabi. <br/> All Rights Reserved</p>
+        <p className="footer__copy">&copy; 2018 Ilham Wahabi.<br/>All Rights Reserved</p>
         <div className="divider3"></div>
         <div className="footer__link">
           <a className="footer__link-github" href="https://github.com/IlhamWahabiGX"><p>Github</p></a>
