@@ -8,13 +8,13 @@ export default class Desc extends React.Component {
       <section className="desc">
         <h1 className="desc__title">What I've been up to.</h1>
         <p className="desc__subtitle">
-          Here's a bunch of my work. Mostly front end things.
+          Here's bunch of my work which mostly front end stuff
         </p>
         <p className="desc__subtitle">
-          I hope you like what i had done :) 
+          Some project is not shown for a reason
         </p>
         <p className="desc__subtitle">
-          Feel free to contact me 
+          Something to say? Dont hesitate to contact me :) 
         </p>
       </section>
     )

@@ -15,7 +15,7 @@
 }
 
 .work__img img {
-  max-width: 60%;
+  max-width: 55%;
 }
 
 .work__title {
@@ -35,9 +35,17 @@
   line-height: 3rem;
 }
 
+.work__btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 40%;
+}
+
 .work__btn {
   font-size: 1.75rem;
-  background-color: #5d8986;
   color: white;
   border: none;
   padding: 1rem 3rem;
@@ -46,8 +54,20 @@
   transition: background-color .5s;
 }
 
-.work__btn:hover {
-  background-color: #527A77;
+.work__btn-view {
+  background-color: #5d8986;
+}
+
+.work__btn-view:hover {
+  background-color: #1f8883;
+}
+
+.work__btn-repo {
+  background-color: #26aca5;
+}
+
+.work__btn-repo:hover {
+  background-color: #1f8883;
 }
 
 .divider {
@@ -67,13 +87,22 @@
     font-size: 3rem;
   }
 
+  .work__category {
+    margin: .5rem 0 3.5rem 0;
+  }
+
   .work__desc {
     font-size: 2rem;
     max-width: 75%;
-    margin-bottom: 5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .work__btn-group {
+    width: 75%;
   }
 
   .work__btn {
+    font-size: 1.5rem;
     padding: 1rem 3rem;
     margin-bottom: 2.5rem;
   }
