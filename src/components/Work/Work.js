@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import axios from 'axios'
 
+import credentials from '../../credentials'
 import './Work.css'
 
 export default class Work extends React.Component {
@@ -13,7 +14,7 @@ export default class Work extends React.Component {
       method: 'get',
       url: 'https://sheets.googleapis.com/v4/spreadsheets/1revH4OXNXMVTReYsHjZpHJnNHkNZdZ8YrWoFRg5lpjk/values/Sheet1!A2:G',
       params: {
-        key: 'AIzaSyAxzEBDep1GqpkqJ03pP3WtsDZavc-7oJg'
+        key: credentials.apiKey
       }
     }).then((res) => this.setState({ works: res.data.values }))
       .catch((err) => console.log(err))
