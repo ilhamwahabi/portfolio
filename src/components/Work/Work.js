@@ -26,7 +26,7 @@ export default class Work extends React.Component {
       { 
         this.state.works.map((work, i) => {
           return (
-            <main key={i} className="work">
+            <main key={i} className={`work ${work[6]}`}>
               <div className="divider"></div>      
               <div className="work__img">
                 <img src={ work[1] } alt="App Home" />
