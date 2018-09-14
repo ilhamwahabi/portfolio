@@ -67,6 +67,10 @@
   background-size: contain;
 }
 
+.header__icon a {
+  color: white;
+}
+
 .header__icon .material-icons {
   padding-bottom: .5rem;
   cursor: pointer;

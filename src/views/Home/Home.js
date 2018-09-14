@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import Navbar from '../../components/Navbar/Navbar'
 import Header from '../../components/Header/Header'
@@ -8,16 +8,14 @@ import Footer from '../../components/Footer/Footer'
 
 import './Home.css'
 
-export default class Home extends React.Component {
-  render(){
-    return (
-      <React.Fragment>
-        <Navbar />
-        <Header />
-        <Desc />
-        <Work />
-        <Footer />
-      </React.Fragment>
-    )
-  }
-}
+const Home = () => (
+  <Fragment>
+    <Navbar />
+    <Header />
+    <Desc />
+    <Work />
+    <Footer />
+  </Fragment>
+)
+
+export default Home;
