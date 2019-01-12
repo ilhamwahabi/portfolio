@@ -1,0 +1,18 @@
+.work.cyan { background-color: #679895; }
+.work.sky { background-color: #66A7D5; }
+
+.cyan .work__category { color: #C8F0EC; }
+.sky .work__category { color: rgb(139, 241, 231);}
+
+.cyan .work__btn-view { background-color: #5d8986; }
+.cyan .work__btn-view:hover { background-color: #1f8883; }
+.cyan .work__btn-repo { background-color: #26aca5; }
+.cyan .work__btn-repo:hover { background-color: #1f8883; }
+
+.sky .work__btn-view { background-color: rgb(134, 201, 248); }
+.sky .work__btn-view:hover { background-color: rgb(63, 173, 252); }
+.sky .work__btn-repo { background-color: rgb(47, 130, 189); }
+.sky .work__btn-repo:hover { background-color: rgb(63, 173, 252); }
+
+.cyan .work__collab-title { color: #C8F0EC; }
+.sky .work__collab-title { color: rgb(139, 241, 231) }
