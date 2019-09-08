@@ -1,7 +1,7 @@
 .header {
   height: 100vh;
   max-width: 100vw;
-  background: #3E3879;  
+  background: #3e3879;
   color: white;
   display: flex;
   flex-direction: column;
@@ -35,18 +35,19 @@
 
 .header__title {
   font-size: 5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.header__subtitle, .header__name {
+.header__subtitle,
+.header__name {
   font-size: 1.5rem;
 }
 
 .header__name {
   border-bottom: 1px solid transparent;
-  transition: border .5s;
+  transition: border 0.5s;
   cursor: pointer;
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 .header__name:hover {
@@ -61,7 +62,7 @@
   height: 75rem;
   width: 75rem;
   position: static;
-  background-image: url("https://puu.sh/Ay8Oc/7f42559378.png");
+  background-image: url("https://i.ibb.co/YRXf3YM/smartmockups-k0awtf37.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -72,7 +73,7 @@
 }
 
 .header__icon .material-icons {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   cursor: pointer;
   animation-name: bounce;
   animation-duration: 1s;
@@ -86,7 +87,7 @@
   }
 
   50% {
-    transform: translateY(1rem);    
+    transform: translateY(1rem);
   }
 
   100% {
