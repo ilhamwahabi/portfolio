@@ -1,6 +1,6 @@
 {
-  "name": "amazing-projects",
-  "homepage": "http://IlhamWahabiGX.github.io/amazing-things",
+  "name": "amazing-things",
+  "homepage": "http://iwgx.github.io/amazing-things",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
