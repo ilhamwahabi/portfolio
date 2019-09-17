@@ -1,20 +1,20 @@
-import React from 'react'
+import React from "react";
 
-import './Desc.css'
+import "./Desc.css";
 
-const Desc = () =>  (
+const Desc = () => (
   <section id="desc" className="desc">
     <h1 className="desc__title">What I have been up to.</h1>
     <p className="desc__subtitle">
-      Here is bunch of my work which mostly front end stuff
+      Here are bunch of my work which mostly front end stuff
     </p>
     <p className="desc__subtitle">
-      Some project is not shown for a reason
+      Although, just selected project that featured here
     </p>
     <p className="desc__subtitle">
-      Something in your mind? Tell me about that :) 
+      Got something to say? Don't hesitate to send me a message :)
     </p>
   </section>
-)
+);
 
 export default Desc;
