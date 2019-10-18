@@ -4,7 +4,7 @@ import axios from "axios";
 import credentials from "../../credentials";
 import "./Work.css";
 
-export default class Work extends React.Component {
+export default class Work extends React.PureComponent {
   state = {
     works: []
   };

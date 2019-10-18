@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Navbar.css";
 
-export default class Navbar extends React.Component {
+export default class Navbar extends React.PureComponent {
   state = {
     scrollClass: "",
     scrolledHeight: 0
