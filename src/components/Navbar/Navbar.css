@@ -6,7 +6,7 @@
   margin: auto;
   width: 100vw;
   color: white;
-  transition: top .5s;
+  transition: top 0.5s;
 }
 
 .navbar__hide {
@@ -43,16 +43,17 @@
   text-decoration: transparent;
 }
 
-.navbar__options p, .navbar__options a {
+.navbar__options p,
+.navbar__options a {
   font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
-  border-bottom: .1rem solid transparent;
-  transition: border .5s;
+  border-bottom: 0.1rem solid transparent;
+  transition: border 0.5s;
 }
 
 .navbar__options p:hover {
-  border-bottom: .1rem solid white;
+  border-bottom: 0.1rem solid white;
 }
 
 .divider {
@@ -64,6 +65,10 @@
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    position: absolute;
+  }
+
   .navbar__row {
     justify-content: center;
     text-align: center;
@@ -78,12 +83,12 @@
     flex: none;
     display: none;
   }
-  
+
   .divider {
     flex: none;
     display: none;
   }
-  
+
   .divider5 {
     flex: none;
     display: none;
