@@ -7,25 +7,28 @@
   color: #3c4245;
 }
 .cyan .work__category {
-  color: #00818a;
+  color: #26aca5;
 }
 .cyan .work__desc {
   color: black;
 }
 .cyan .work__btn-view {
-  background-color: #5d8986;
+  background-color: #3c4245;
 }
 .cyan .work__btn-view:hover {
-  background-color: #1f8883;
+  background-color: #26aca5;
 }
 .cyan .work__btn-repo {
   background-color: #26aca5;
 }
 .cyan .work__btn-repo:hover {
-  background-color: #1f8883;
+  background-color: #3c4245;
 }
 .cyan .work__collab-title {
-  color: #c8f0ec;
+  color: #26aca5;
+}
+.cyan .work__collab {
+  color: black;
 }
 
 /* SKY */
@@ -36,18 +39,20 @@
 .sky .work__category {
   color: rgb(139, 241, 231);
 }
-
 .sky .work__btn-view {
-  background-color: #719192;
+  background-color: #fcf9ea;
+  color: black;
 }
 .sky .work__btn-view:hover {
-  background-color: rgb(63, 173, 252);
+  background-color: #26aca5;
+  color: white;
 }
 .sky .work__btn-repo {
-  background-color: rgb(47, 130, 189);
+  background-color: #26aca5;
 }
 .sky .work__btn-repo:hover {
-  background-color: rgb(63, 173, 252);
+  background-color: #fcf9ea;
+  color: black;
 }
 .sky .work__collab-title {
   color: rgb(139, 241, 231);

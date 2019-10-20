@@ -25,9 +25,9 @@ export default class Work extends React.PureComponent {
   getTheme(workIndex) {
     switch (workIndex % 2) {
       case 1:
-        return "cyan";
-      case 0:
         return "sky";
+      case 0:
+        return "cyan";
       default:
         return "";
     }
@@ -71,7 +71,7 @@ export default class Work extends React.PureComponent {
         <h1 className="work__title">{work[0]}</h1>
         <h3 className="work__category">{work[3]}</h3>
         <p className="work__desc">{work[2]}</p>
-        {this.renderCollabWith(work[7])}
+        {this.renderCollabWith(work[6])}
         <div className="divider"></div>
         {this.renderButtonGroup(work[4], work[5])}
         <div className="divider"></div>
