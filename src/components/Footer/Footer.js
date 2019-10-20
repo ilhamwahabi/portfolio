@@ -14,6 +14,9 @@ const Footer = () => (
       <a className="footer__link-github" href="https://github.com/iwgx">
         <p>Github</p>
       </a>
+      <a className="footer__link-gitlab" href="https://gitlab.com/iwgx">
+        <p>Gitlab</p>
+      </a>
       <a
         className="footer__link-linkedin"
         href="https://www.linkedin.com/in/ilham-wahabi-aa1479131/"
