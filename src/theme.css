@@ -1,17 +1,17 @@
+/* Cyan */
+
 .work.cyan {
-  background-color: #679895;
+  background-color: #fcf9ea;
 }
-.work.sky {
-  background-color: #3c4245;
+.cyan .work__title {
+  color: #3c4245;
 }
-
 .cyan .work__category {
-  color: #c8f0ec;
+  color: #00818a;
 }
-.sky .work__category {
-  color: rgb(139, 241, 231);
+.cyan .work__desc {
+  color: black;
 }
-
 .cyan .work__btn-view {
   background-color: #5d8986;
 }
@@ -23,6 +23,18 @@
 }
 .cyan .work__btn-repo:hover {
   background-color: #1f8883;
+}
+.cyan .work__collab-title {
+  color: #c8f0ec;
+}
+
+/* SKY */
+
+.work.sky {
+  background-color: #3c4245;
+}
+.sky .work__category {
+  color: rgb(139, 241, 231);
 }
 
 .sky .work__btn-view {
@@ -36,10 +48,6 @@
 }
 .sky .work__btn-repo:hover {
   background-color: rgb(63, 173, 252);
-}
-
-.cyan .work__collab-title {
-  color: #c8f0ec;
 }
 .sky .work__collab-title {
   color: rgb(139, 241, 231);
