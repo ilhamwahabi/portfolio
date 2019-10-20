@@ -38,7 +38,14 @@ export default class Navbar extends React.PureComponent {
               rel="noopener noreferrer"
               href="https://iwgx.github.io"
             >
-              <p>My Profile</p>
+              <p>About Me</p>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://iwgx.github.io"
+            >
+              <p>My CV</p>
             </a>
           </div>
           <div className="divider"></div>

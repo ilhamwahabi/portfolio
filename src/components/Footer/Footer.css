@@ -76,8 +76,8 @@
     font-size: 1.9rem;
   }
 
-  .footer__link-cv,
-  .footer__link-gitlab {
+  .footer__link-gitlab,
+  .footer__link-linkedin {
     display: none;
   }
 

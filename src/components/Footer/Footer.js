@@ -11,23 +11,37 @@ const Footer = () => (
     </p>
     <div className="divider3"></div>
     <div className="footer__link">
-      <a className="footer__link-github" href="https://github.com/iwgx">
+      <a
+        className="footer__link-github"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/iwgx"
+      >
         <p>Github</p>
       </a>
-      <a className="footer__link-gitlab" href="https://gitlab.com/iwgx">
+      <a
+        className="footer__link-gitlab"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://gitlab.com/iwgx"
+      >
         <p>Gitlab</p>
       </a>
       <a
+        className="footer__link-twitter"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/ilhamwahabigx"
+      >
+        <p>Twitter</p>
+      </a>
+      <a
         className="footer__link-linkedin"
+        target="_blank"
+        rel="noopener noreferrer"
         href="https://www.linkedin.com/in/ilham-wahabi-aa1479131/"
       >
         <p>LinkedIn</p>
-      </a>
-      <a
-        className="footer__link-cv"
-        href="https://drive.google.com/open?id=1m0MwAYj3GLWRCuFUzzAHQqXabSB6cNul"
-      >
-        <p>My CV</p>
       </a>
     </div>
     <div className="divider1"></div>
