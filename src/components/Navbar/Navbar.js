@@ -43,7 +43,7 @@ export default class Navbar extends React.PureComponent {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://iwgx.github.io"
+              href="https://drive.google.com/file/d/1m0MwAYj3GLWRCuFUzzAHQqXabSB6cNul/view"
             >
               <p>My CV</p>
             </a>
