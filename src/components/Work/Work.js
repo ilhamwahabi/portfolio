@@ -34,7 +34,7 @@ export default class Work extends React.PureComponent {
   }
 
   renderCollabWith(collab) {
-    if (!collab || collab === "") return;
+    if (!collab) return;
 
     return (
       <Fragment>
@@ -47,12 +47,12 @@ export default class Work extends React.PureComponent {
   renderButtonGroup(repo, view) {
     return (
       <div className="work__btn-group">
-        {view === "" ? null : (
+        {view && (
           <a target="_blank" href={view}>
             <button className="work__btn work__btn-view">TAKE A LOOK</button>
           </a>
         )}
-        {repo === "" ? null : (
+        {repo && (
           <a target="_blank" href={repo}>
             <button className="work__btn work__btn-repo">PEEK REPO</button>
           </a>
