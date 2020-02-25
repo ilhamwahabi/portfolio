@@ -52,6 +52,12 @@
   transition: border 0.5s;
 }
 
+.navbar__options p {
+  /* TODO: remove this centering trick  */
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
 .navbar__options p:hover {
   border-bottom: 0.1rem solid white;
 }
