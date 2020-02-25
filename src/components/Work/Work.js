@@ -48,12 +48,12 @@ export default class Work extends React.PureComponent {
     return (
       <div className="work__btn-group">
         {view && (
-          <a target="_blank" href={view}>
+          <a target="_blank" rel="noopener noreferrer" href={view}>
             <button className="work__btn work__btn-view">TAKE A LOOK</button>
           </a>
         )}
         {repo && (
-          <a target="_blank" href={repo}>
+          <a target="_blank" rel="noopener noreferrer" href={repo}>
             <button className="work__btn work__btn-repo">PEEK REPO</button>
           </a>
         )}
@@ -61,7 +61,7 @@ export default class Work extends React.PureComponent {
     );
   }
 
-  renderWork(work, index) {
+  renderWork = (work, index) => {
     return (
       <main key={index} className={`work ${this.getTheme(index + 1)}`}>
         <div className="divider"></div>
@@ -77,15 +77,11 @@ export default class Work extends React.PureComponent {
         <div className="divider"></div>
       </main>
     );
-  }
+  };
 
   render() {
     const { works } = this.state;
 
-    return (
-      <div className="works">
-        {works.map((work, index) => this.renderWork(work, index))}
-      </div>
-    );
+    return <div className="works">{works.map(this.renderWork)}</div>;
   }
 }
