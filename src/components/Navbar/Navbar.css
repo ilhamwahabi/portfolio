@@ -32,7 +32,7 @@
 
 .navbar__options {
   display: flex;
-  width: 250px;
+  width: 16rem;
   flex-direction: row;
   justify-content: space-between;
   margin-left: auto;
@@ -77,5 +77,15 @@
   .navbar__options {
     flex: none;
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar__row {
+    padding: 3rem 0;
+  }
+
+  .navbar__logo {
+    font-size: 1.5rem;
   }
 }

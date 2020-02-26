@@ -9,6 +9,16 @@ const links = [
     text: "let's talk on",
     label: "Twitter",
     link: "https://twitter.com/ilhamwahabigx"
+  },
+  {
+    text: "discuss on",
+    label: "Reddit",
+    link: "https://www.reddit.com/user/ilhamwahabi"
+  },
+  {
+    text: "add me on",
+    label: "Facebook",
+    link: "https://www.facebook.com/wahabi.gx"
   }
 ];
 
