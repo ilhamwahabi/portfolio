@@ -4,7 +4,7 @@
 > Mostly frontend.
 > Some of my college task is not included.
 
-# Usage
+## Usage
 
 1. Create `credentials.js` file in `src` that do:
 

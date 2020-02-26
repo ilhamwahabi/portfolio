@@ -2,17 +2,13 @@ import React from "react";
 
 import "./Footer.css";
 
+import { footerLinks } from "../../urls";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const links = {
-    github: "https://github.com/iwgx",
-    twitter: "https://twitter.com/ilhamwahabigx",
-    facebook: "https://www.facebook.com/wahabi.gx",
-    linkedin: "https://www.linkedin.com/in/ilham-wahabi"
-  };
 
   const renderLink = () => {
-    return Object.entries(links).map(([name, link]) => (
+    return Object.entries(footerLinks).map(([name, link]) => (
       <a
         className={`footer__link-${name}`}
         target="_blank"

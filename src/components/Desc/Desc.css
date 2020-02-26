@@ -39,15 +39,12 @@ section.desc {
 
   .desc__subtitle {
     font-size: 1.25rem;
+    line-height: 2.5rem;
   }
 }
 
 @media (max-width: 321px) {
   .desc__title {
     font-size: 2.25rem;
-  }
-
-  .desc__subtitle {
-    line-height: 2.5rem;
   }
 }

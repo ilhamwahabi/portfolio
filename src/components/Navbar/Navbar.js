@@ -2,11 +2,7 @@ import React from "react";
 
 import "./Navbar.css";
 
-const links = {
-  linkedIn: "https://www.linkedin.com/in/ilham-wahabi",
-  resume:
-    "https://drive.google.com/file/d/1m0MwAYj3GLWRCuFUzzAHQqXabSB6cNul/view"
-};
+import { navLinks } from "../../urls";
 
 export default class Navbar extends React.PureComponent {
   state = {
@@ -33,7 +29,7 @@ export default class Navbar extends React.PureComponent {
   };
 
   renderLink = () => {
-    return Object.entries(links).map(([name, link]) => (
+    return Object.entries(navLinks).map(([name, link]) => (
       <a
         className={`footer__link-${name}`}
         target="_blank"

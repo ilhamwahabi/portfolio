@@ -3,28 +3,11 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "./Header.css";
 
-const links = [
-  { text: "see more on", label: "Github", link: "https://github.com/iwgx" },
-  {
-    text: "let's talk on",
-    label: "Twitter",
-    link: "https://twitter.com/ilhamwahabigx"
-  },
-  {
-    text: "discuss on",
-    label: "Reddit",
-    link: "https://www.reddit.com/user/ilhamwahabi"
-  },
-  {
-    text: "add me on",
-    label: "Facebook",
-    link: "https://www.facebook.com/wahabi.gx"
-  }
-];
+import { headerLinks } from "../../urls";
 
 const Header = () => {
   const renderLink = () => {
-    return links.map(({ text, label, link }) => (
+    return headerLinks.map(({ text, label, link }) => (
       <a target="_blank" rel="noopener noreferrer" href={link} key={label}>
         <p>
           {text} <span>{label}</span>
