@@ -36,4 +36,8 @@ section.desc {
   .desc__title {
     font-size: 2.5rem;
   }
+
+  .desc__subtitle {
+    font-size: 1.25rem;
+  }
 }
