@@ -33,7 +33,7 @@
 .navbar__options {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex: 1;
 }
 

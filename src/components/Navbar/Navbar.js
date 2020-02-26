@@ -41,7 +41,6 @@ export default class Navbar extends React.PureComponent {
               <p>My Resume</p>
             </a>
           </div>
-          <div className="divider"></div>
         </div>
       </nav>
     );
