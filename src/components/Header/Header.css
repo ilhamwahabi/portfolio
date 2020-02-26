@@ -74,6 +74,42 @@
   background-size: contain;
 }
 
+.header__social {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.header__social a {
+  margin: 2rem 0;
+  background-color: #f1f1f1;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border-bottom: 0.5rem solid #26aca5;
+  position: relative;
+  transition: transform 0.5s;
+  text-decoration: none;
+}
+
+.header__social a:first-child {
+  margin-right: 2rem;
+}
+
+.header__social a:hover {
+  transform: translateY(-5px);
+}
+
+.header__social a p {
+  font-size: 1.5rem;
+  color: #3c4245;
+}
+
+.header__social a p span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #26aca5;
+}
+
 .header__icon {
   margin-bottom: 5rem;
 }
