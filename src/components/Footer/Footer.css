@@ -2,30 +2,31 @@
   min-height: 15vh;
   max-width: 100vw;
   background-color: #f1f1f1;
-  overflow-x: hidden;
+  box-shadow: 0 -1px 20px -12.5px #3c4245;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__wrapper {
+  height: 100%;
+  width: 75%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  /* border-top: 1px solid #3c4245; */
-  box-shadow: 0 -1px 20px -12.5px #3c4245;
+  justify-content: space-between;
 }
 
-.footer__copy {
+.footer__copy span {
   font-size: 1.5rem;
   text-align: center;
-  flex: 2;
-}
-
-.footer__copy br {
-  display: none;
 }
 
 .footer__link {
   display: flex;
-  flex: 2;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 350px;
 }
 
 .footer__link p {
@@ -48,59 +49,48 @@
   border-bottom: 1px solid gray;
 }
 
-.divider1 {
-  flex: 1;
-}
-
-.divider3 {
-  flex: 3;
-}
-
-@media (max-width: 480px) {
-  .footer {
-    padding: 0 1.5rem;
+@media (max-width: 481px) {
+  .footer__wrapper {
+    flex-direction: column;
+    padding: 2rem 0;
+    width: 80%;
   }
 
   .footer__copy {
-    font-size: 1.9rem;
-    flex: 2;
-  }
-
-  .footer__copy br {
-    display: block;
-  }
-
-  .footer__link {
+    margin-bottom: 2rem;
     display: flex;
-    flex: 1;
     flex-direction: column;
   }
 
+  .footer__copy span {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    white-space: nowrap;
+  }
+
+  .footer__link {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer__link a {
+    width: 50%;
+  }
+
   .footer__link p {
-    text-align: left;
-    font-size: 1.9rem;
-  }
-
-  .footer__link-gitlab,
-  .footer__link-linkedin {
-    display: none;
-  }
-
-  .divider3 {
-    flex: none;
-  }
-
-  .divider1 {
-    flex: none;
+    text-align: center;
+    font-size: 1.5rem;
   }
 }
 
-@media (max-width: 361px) {
-  .footer__copy {
-    font-size: 1.5rem;
+@media (max-width: 321px) {
+  .footer__copy span {
+    font-size: 1.25rem;
   }
 
   .footer__link p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }

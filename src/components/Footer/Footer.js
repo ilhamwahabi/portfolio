@@ -4,56 +4,36 @@ import "./Footer.css";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const { github, facebook, twitter, linkedin } = {
+  const links = {
     github: "https://github.com/iwgx",
-    facebook: "https://www.facebook.com/wahabi.gx",
     twitter: "https://twitter.com/ilhamwahabigx",
+    facebook: "https://www.facebook.com/wahabi.gx",
     linkedin: "https://www.linkedin.com/in/ilham-wahabi"
+  };
+
+  const renderLink = () => {
+    return Object.entries(links).map(([name, link]) => (
+      <a
+        className={`footer__link-${name}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={link}
+        key={name}
+      >
+        <p>{name.charAt(0).toUpperCase() + name.slice(1)}</p>
+      </a>
+    ));
   };
 
   return (
     <footer className="footer">
-      <div className="divider1"></div>
-      <p className="footer__copy">
-        &copy; {currentYear} Ilham Wahabi.
-        <br /> All Rights Reserved.
-      </p>
-      <div className="divider3"></div>
-      <div className="footer__link">
-        <a
-          className="footer__link-github"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={github}
-        >
-          <p>Github</p>
-        </a>
-        <a
-          className="footer__link-gitlab"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={facebook}
-        >
-          <p>Facebook</p>
-        </a>
-        <a
-          className="footer__link-twitter"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={twitter}
-        >
-          <p>Twitter</p>
-        </a>
-        <a
-          className="footer__link-linkedin"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={linkedin}
-        >
-          <p>LinkedIn</p>
-        </a>
+      <div className="footer__wrapper">
+        <p className="footer__copy">
+          <span>&copy; {currentYear} Ilham Wahabi.</span>
+          <span> All Rights Reserved.</span>
+        </p>
+        <div className="footer__link">{renderLink()}</div>
       </div>
-      <div className="divider1"></div>
     </footer>
   );
 };
