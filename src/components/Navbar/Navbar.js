@@ -3,7 +3,7 @@ import React from "react";
 import "./Navbar.css";
 
 const links = {
-  linkedin: "https://www.linkedin.com/in/ilham-wahabi",
+  linkedIn: "https://www.linkedin.com/in/ilham-wahabi",
   resume:
     "https://drive.google.com/file/d/1m0MwAYj3GLWRCuFUzzAHQqXabSB6cNul/view"
 };

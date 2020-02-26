@@ -35,7 +35,6 @@
   border-bottom: 1px solid transparent;
   cursor: pointer;
   padding-bottom: 2.5px;
-  /* TODO: remove this centering trick  */
   margin-top: 2.5px;
   transition: border 0.5s;
 }

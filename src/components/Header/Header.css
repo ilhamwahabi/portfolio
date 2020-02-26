@@ -146,6 +146,11 @@
     flex-direction: column;
     padding: 0;
     margin: auto;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .header__img {
@@ -178,9 +183,13 @@
   }
 
   .header__social a {
-    margin: 1.5rem 0 0;
+    margin: 1.75rem 0 0;
     text-align: center;
     padding: 1.5rem 3rem;
+  }
+
+  .header__icon {
+    display: none;
   }
 }
 
@@ -205,7 +214,7 @@
   }
 
   .header__social a {
-    margin: 1rem 0 0;
+    margin: 1.5rem 0 0;
     padding: 1.25rem 3rem;
   }
 
