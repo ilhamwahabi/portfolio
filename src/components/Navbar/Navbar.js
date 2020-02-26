@@ -2,6 +2,13 @@ import React from "react";
 
 import "./Navbar.css";
 
+const links = {
+  facebook: "https://www.facebook.com/wahabi.gx",
+  linkedin: "https://www.linkedin.com/in/ilham-wahabi",
+  resume:
+    "https://drive.google.com/file/d/1m0MwAYj3GLWRCuFUzzAHQqXabSB6cNul/view"
+};
+
 export default class Navbar extends React.PureComponent {
   state = {
     scrollClass: "",
@@ -26,21 +33,26 @@ export default class Navbar extends React.PureComponent {
     this.setState({ scrolledHeight: window.scrollY });
   };
 
+  renderLink = () => {
+    return Object.entries(links).map(([name, link]) => (
+      <a
+        className={`footer__link-${name}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={link}
+        key={name}
+      >
+        <p>{name.charAt(0).toUpperCase() + name.slice(1)}</p>
+      </a>
+    ));
+  };
+
   render() {
     return (
       <nav className={`navbar ${this.state.scrollClass}`}>
         <div className="navbar__row">
           <p className="navbar__logo">Amazing Things</p>
-          <div className="divider5"></div>
-          <div className="navbar__options">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1m0MwAYj3GLWRCuFUzzAHQqXabSB6cNul/view"
-            >
-              <p>My Resume</p>
-            </a>
-          </div>
+          <div className="navbar__options">{this.renderLink()}</div>
         </div>
       </nav>
     );

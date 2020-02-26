@@ -19,22 +19,23 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 5rem 2.5rem;
+  padding: 5rem 0;
+  width: 75%;
 }
 
 .navbar__logo {
   font-size: 2rem;
   font-weight: 700;
-  flex: 2;
   text-align: center;
   cursor: pointer;
 }
 
 .navbar__options {
   display: flex;
+  width: 250px;
   flex-direction: row;
-  justify-content: flex-start;
-  flex: 1;
+  justify-content: space-between;
+  margin-left: auto;
 }
 
 .navbar__options a {
