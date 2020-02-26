@@ -25,7 +25,7 @@
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
-  padding-top: 20rem;
+  padding-top: 15%;
   width: 75%;
 }
 
@@ -106,17 +106,13 @@
 }
 
 @media (max-width: 480px) {
-  .header {
-    justify-content: center;
-  }
-
   .header__row {
     flex-direction: column;
+    padding-top: 40%;
   }
 
   .header__img {
-    height: 30rem;
-    width: 30rem;
+    display: none;
   }
 
   .header__main {
@@ -131,17 +127,7 @@
   }
 }
 
-@media (max-width: 380px) {
-  .header__row {
-    padding-top: 10rem;
-  }
-}
-
 @media (max-width: 340px) {
-  .header__row {
-    padding-top: 15rem;
-  }
-
   .header__title {
     margin-bottom: 2.5rem;
     font-size: 3.5rem;

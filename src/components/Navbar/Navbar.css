@@ -63,14 +63,6 @@
   border-bottom: 0.1rem solid white;
 }
 
-.divider {
-  flex: 1;
-}
-
-.divider5 {
-  flex: 5;
-}
-
 @media (max-width: 480px) {
   .navbar__row {
     justify-content: center;
@@ -83,16 +75,6 @@
   }
 
   .navbar__options {
-    flex: none;
-    display: none;
-  }
-
-  .divider {
-    flex: none;
-    display: none;
-  }
-
-  .divider5 {
     flex: none;
     display: none;
   }
