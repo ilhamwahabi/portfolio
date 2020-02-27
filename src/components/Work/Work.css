@@ -45,8 +45,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
   width: 40%;
+  margin-top: 10rem;
 }
 
 .work__btn {
@@ -58,10 +58,6 @@
   cursor: pointer;
   transition: color 0.25s, background-color 0.5s;
   outline: none;
-}
-
-.divider {
-  flex: 1;
 }
 
 .work__collab-title {
@@ -125,6 +121,10 @@
   .work__btn {
     padding: 1rem 2rem;
   }
+
+  .work__btn-group {
+    margin-top: 1rem;
+  }
 }
 
 @media (max-width: 340px) {
@@ -168,10 +168,6 @@
     font-size: 1.25rem;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
-  }
-
-  .work__btn-group {
-    margin-top: 1rem;
   }
 
   .work__btn {

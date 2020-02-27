@@ -64,7 +64,6 @@ export default class Work extends React.PureComponent {
   renderWork = (work, index) => {
     return (
       <main key={index} className={`work ${this.getTheme(index + 1)}`}>
-        <div className="divider"></div>
         <div className="work__img">
           <img src={work[1]} alt="App Home" />
         </div>
@@ -72,9 +71,7 @@ export default class Work extends React.PureComponent {
         <h3 className="work__category">{work[3]}</h3>
         <p className="work__desc">{work[2]}</p>
         {this.renderCollabWith(work[6])}
-        <div className="divider"></div>
         {this.renderButtonGroup(work[4], work[5])}
-        <div className="divider"></div>
       </main>
     );
   };
