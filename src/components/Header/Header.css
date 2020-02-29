@@ -93,6 +93,7 @@
   position: relative;
   transition: transform 0.5s;
   text-decoration: none;
+  z-index: 1;
 }
 
 .header__social a:hover {
