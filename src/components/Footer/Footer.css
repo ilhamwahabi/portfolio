@@ -50,13 +50,13 @@
 
 @media (max-width: 481px) {
   .footer__wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 2rem 0;
     width: 80%;
   }
 
   .footer__copy {
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
   }
