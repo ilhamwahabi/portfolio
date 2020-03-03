@@ -62,6 +62,17 @@
   border-bottom: 0.1rem solid white;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar__options {
+    width: 20rem;
+  }
+
+  .navbar__options p,
+  .navbar__options a {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 480px) {
   .navbar__row {
     justify-content: center;

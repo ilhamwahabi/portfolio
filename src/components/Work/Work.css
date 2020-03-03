@@ -71,6 +71,26 @@
   line-height: 3rem;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .work {
+    height: 80vh;
+  }
+
+  .work__desc {
+    max-width: 60%;
+  }
+
+  .work__btn-group {
+    width: 60%;
+    margin-top: 5rem;
+  }
+
+  .work__btn {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+  }
+}
+
 @media (max-width: 480px) {
   .work {
     height: 100vh;

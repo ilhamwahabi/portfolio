@@ -48,6 +48,12 @@
   border-bottom: 1px solid gray;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    min-height: 10vh;
+  }
+}
+
 @media (max-width: 481px) {
   .footer__wrapper {
     flex-direction: column-reverse;
