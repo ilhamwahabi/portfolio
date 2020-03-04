@@ -29,15 +29,15 @@ export default class Navbar extends React.PureComponent {
   };
 
   renderLink = () => {
-    return Object.entries(navLinks).map(([name, link]) => (
+    return navLinks.map(({ label, link }) => (
       <a
-        className={`footer__link-${name}`}
+        className={`footer__link-${label}`}
         target="_blank"
         rel="noopener noreferrer"
         href={link}
-        key={name}
+        key={label}
       >
-        <p>{name.charAt(0).toUpperCase() + name.slice(1)}</p>
+        <p>{label}</p>
       </a>
     ));
   };
