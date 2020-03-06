@@ -183,6 +183,24 @@
   }
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .header__row {
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    height: 100vh;
+  }
+
+  .header__img {
+    display: none;
+  }
+
+  .header__icon {
+    position: absolute;
+    bottom: 15px;
+  }
+}
+
 @media (max-width: 480px) {
   .header {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);

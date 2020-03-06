@@ -1,4 +1,4 @@
-const { github, twitter, linkedIn, reddit, blog, about } = {
+const { github, twitter, linkedIn, reddit } = {
   github: "https://github.com/iwgx",
   twitter: "https://twitter.com/ilhamwahabigx",
   linkedIn: "https://www.linkedin.com/in/ilham-wahabi",
