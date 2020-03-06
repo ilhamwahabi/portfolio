@@ -9,10 +9,6 @@
   transition: top 0.5s;
 }
 
-.navbar__hide {
-  top: -10rem;
-}
-
 .navbar__row {
   margin: auto;
   display: flex;
@@ -93,5 +89,15 @@
 @media (max-width: 480px) {
   .navbar__logo {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .navbar__logo {
+    font-size: 1.25rem;
+  }
+
+  .navbar__row {
+    padding: 3rem 0;
   }
 }
