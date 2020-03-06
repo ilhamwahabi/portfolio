@@ -91,6 +91,16 @@
   }
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .work {
+    height: 100vh;
+  }
+
+  .work__desc {
+    max-width: 75%;
+  }
+}
+
 @media (max-width: 480px) {
   .work {
     height: 100vh;
