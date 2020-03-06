@@ -19,6 +19,21 @@ section.desc {
   line-height: 3rem;
 }
 
+@media (min-width: 1367px) and (min-height: 769px) {
+  section.desc {
+    height: 60vh;
+  }
+
+  .desc__title {
+    font-size: 5rem;
+  }
+
+  .desc__subtitle {
+    font-size: 2rem;
+    line-height: 5rem;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   section.desc {
     height: 30vh;

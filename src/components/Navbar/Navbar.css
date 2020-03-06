@@ -58,6 +58,12 @@
   border-bottom: 0.1rem solid white;
 }
 
+@media (min-width: 1600px) {
+  .navbar__row {
+    padding: 7.5rem 0;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar__options {
     width: 20rem;

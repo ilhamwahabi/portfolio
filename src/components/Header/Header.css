@@ -115,6 +115,36 @@
   margin-bottom: 4rem;
 }
 
+@media (min-width: 1600px) {
+  .header__row {
+    padding-top: 15%;
+  }
+
+  .header__title {
+    font-size: 6rem;
+  }
+
+  .header__subtitle,
+  .header__name {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .header__social {
+    width: 60rem;
+  }
+
+  .header__social a {
+    margin: 2rem 2rem 2rem 0;
+    width: 28rem;
+  }
+
+  .header__social a p,
+  .header__social a p span {
+    font-size: 2rem;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .header__row {
     margin: auto;

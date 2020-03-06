@@ -46,7 +46,7 @@
   justify-content: space-around;
   align-items: center;
   width: 40%;
-  margin-top: 10rem;
+  margin-top: 7.5rem;
 }
 
 .work__btn {
@@ -69,6 +69,21 @@
   font-size: 2rem;
   margin-top: 1rem;
   line-height: 3rem;
+}
+
+@media (min-width: 1367px) and (min-height: 769px) {
+  .work {
+    height: 125vh;
+  }
+
+  .work__desc {
+    max-width: 35%;
+    line-height: 4rem;
+  }
+
+  .work__btn-group {
+    margin-top: 5rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -98,6 +113,16 @@
 
   .work__desc {
     max-width: 75%;
+  }
+
+  .work__btn-group {
+    width: 75%;
+    margin-top: 5rem;
+  }
+
+  .work__btn {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
   }
 }
 
