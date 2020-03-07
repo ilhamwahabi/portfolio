@@ -66,7 +66,7 @@
   top: 30%;
   bottom: 0;
   margin: auto;
-  left: 40%;
+  left: 40vw;
   position: absolute;
   background-image: url("https://i.ibb.co/YRXf3YM/smartmockups-k0awtf37.png");
   background-position: center;
@@ -145,7 +145,13 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
+  .header__img {
+    left: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .header__row {
     margin: auto;
     padding: 0;
@@ -186,6 +192,29 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .header {
+    min-height: 700px;
+    height: 100vh;
+  }
+
+  .header__row {
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+  }
+
+  .header__img {
+    display: none;
+  }
+
+  .header__icon {
+    position: absolute;
+    bottom: 15px;
+  }
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   .header__row {
     margin: auto;
@@ -201,6 +230,43 @@
   .header__icon {
     position: absolute;
     bottom: 15px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  .header {
+    min-height: 200vh;
+  }
+
+  .header__row {
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+  }
+
+  .header__title {
+    font-size: 4rem;
+  }
+
+  .header__subtitle,
+  .header__name {
+    font-size: 2.5rem;
+  }
+
+  .header__social {
+    margin-top: 10%;
+  }
+
+  .header__social a {
+    margin: 1rem 2rem 2rem 0;
+    width: 20rem;
+    padding: 1.75rem 2.5rem;
+  }
+
+  .header__social a p,
+  .header__social a p span {
+    font-size: 1.25rem;
   }
 }
 

@@ -106,6 +106,13 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .work {
+    max-height: 1080px;
+    height: 225vh;
+  }
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   .work {
     height: 100vh;
@@ -123,6 +130,12 @@
   .work__btn {
     font-size: 1.5rem;
     padding: 1rem 3rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  .work {
+    height: 250vh;
   }
 }
 
