@@ -1,8 +1,8 @@
 # Amazing Things
 
-> List of what i had been there.
-> Mostly frontend.
-> Some of my college task is not included.
+## About
+
+Display some of my featured project that mostly frontend.
 
 ## Usage
 

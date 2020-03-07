@@ -11,7 +11,6 @@ export default class Work extends React.PureComponent {
 
   componentWillMount() {
     axios({
-      method: "get",
       url:
         "https://sheets.googleapis.com/v4/spreadsheets/1revH4OXNXMVTReYsHjZpHJnNHkNZdZ8YrWoFRg5lpjk/values/Sheet1!A2:H",
       params: {

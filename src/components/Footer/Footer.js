@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./Footer.css";
-
 import { footerLinks } from "../../urls";
 
 const Footer = () => {

@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "./Header.css";
-
 import { headerLinks } from "../../urls";
 import ChevronDown from "./ChevronDown";
 
