@@ -12,10 +12,10 @@
 .cyan .work__desc {
   color: black;
 }
-.cyan .work__btn-view {
+.cyan .work__btn-live {
   background-color: #3c4245;
 }
-.cyan .work__btn-view:hover {
+.cyan .work__btn-live:hover {
   background-color: #26aca5;
 }
 .cyan .work__btn-repo {
@@ -39,11 +39,11 @@
 .sky .work__category {
   color: rgb(139, 241, 231);
 }
-.sky .work__btn-view {
+.sky .work__btn-live {
   background-color: #fcf9ea;
   color: black;
 }
-.sky .work__btn-view:hover {
+.sky .work__btn-live:hover {
   background-color: #26aca5;
   color: white;
 }

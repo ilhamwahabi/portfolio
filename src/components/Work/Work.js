@@ -1,12 +1,20 @@
-import React, { Fragment } from "react";
+import React from "react";
 import axios from "axios";
 
 import credentials from "../../credentials";
 import "./Work.css";
 
+const Button = ({ type, url, label }) => {
+  return (
+    <a target="_blank" rel="noopener noreferrer" href={url}>
+      <button className={`work__btn work__btn-${type}`}>{label}</button>
+    </a>
+  );
+};
+
 export default class Work extends React.PureComponent {
   state = {
-    works: []
+    works: [],
   };
 
   componentWillMount() {
@@ -14,11 +22,11 @@ export default class Work extends React.PureComponent {
       url:
         "https://sheets.googleapis.com/v4/spreadsheets/1revH4OXNXMVTReYsHjZpHJnNHkNZdZ8YrWoFRg5lpjk/values/Sheet1!A2:H",
       params: {
-        key: credentials.apiKey
-      }
+        key: credentials.apiKey,
+      },
     })
-      .then(res => this.setState({ works: res.data.values }))
-      .catch(err => console.log(err));
+      .then((res) => this.setState({ works: res.data.values }))
+      .catch((err) => console.log(err));
   }
 
   getTheme(workIndex) {
@@ -36,41 +44,35 @@ export default class Work extends React.PureComponent {
     if (!collab) return;
 
     return (
-      <Fragment>
+      <>
         <p className="work__collab-title">In Collaboration with:</p>
         <p className="work__collab">{collab}</p>
-      </Fragment>
+      </>
     );
   }
 
-  renderButtonGroup(repo, view) {
+  renderButtonGroup(repo, live) {
     return (
       <div className="work__btn-group">
-        {view && (
-          <a target="_blank" rel="noopener noreferrer" href={view}>
-            <button className="work__btn work__btn-view">TAKE A LOOK</button>
-          </a>
-        )}
-        {repo && (
-          <a target="_blank" rel="noopener noreferrer" href={repo}>
-            <button className="work__btn work__btn-repo">PEEK REPO</button>
-          </a>
-        )}
+        {live && <Button type="live" url={live} label={"TAKE A LOOK"} />}
+        {repo && <Button type="repo" url={repo} label={"PEEK REPO"} />}
       </div>
     );
   }
 
   renderWork = (work, index) => {
+    const [title, image, desc, category, repo, live, collab] = work;
+
     return (
       <main key={index} className={`work ${this.getTheme(index + 1)}`}>
         <div className="work__img">
-          <img src={work[1]} alt="App Home" />
+          <img src={image} alt="App Home" />
         </div>
-        <h1 className="work__title">{work[0]}</h1>
-        <h3 className="work__category">{work[3]}</h3>
-        <p className="work__desc">{work[2]}</p>
-        {this.renderCollabWith(work[6])}
-        {this.renderButtonGroup(work[4], work[5])}
+        <h1 className="work__title">{title}</h1>
+        <h3 className="work__category">{category}</h3>
+        <p className="work__desc">{desc}</p>
+        {this.renderCollabWith(collab)}
+        {this.renderButtonGroup(repo, live)}
       </main>
     );
   };
