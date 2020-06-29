@@ -1,11 +1,17 @@
 import React, { Fragment } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "./Header.css";
 import { headerLinks } from "../../urls";
 import ChevronDown from "./ChevronDown";
 
 const Header = () => {
+  const scrollToDesc = () => {
+    document.getElementById("desc").scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  };
+
   const renderLink = () => {
     return headerLinks.map(({ text, label, link }) => (
       <a target="_blank" rel="noopener noreferrer" href={link} key={label}>
@@ -31,10 +37,8 @@ const Header = () => {
           </div>
           <div className="header__img"></div>
         </div>
-        <div className="header__icon">
-          <AnchorLink href="#desc" offset={() => window.outerHeight * 0.25}>
-            <ChevronDown />
-          </AnchorLink>
+        <div className="header__icon" onClick={scrollToDesc}>
+          <ChevronDown />
         </div>
       </header>
     </Fragment>
