@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 
-import credentials from "../../credentials";
 import "./Work.css";
 
 const Button = ({ type, url, label }) => {
@@ -22,7 +21,7 @@ export default class Work extends React.PureComponent {
       url:
         "https://sheets.googleapis.com/v4/spreadsheets/1revH4OXNXMVTReYsHjZpHJnNHkNZdZ8YrWoFRg5lpjk/values/Sheet1!A2:H",
       params: {
-        key: credentials.apiKey,
+        key: process.env.REACT_APP_GOOGLE_API_KEY,
       },
     })
       .then((res) => this.setState({ works: res.data.values }))
