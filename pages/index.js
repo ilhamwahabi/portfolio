@@ -37,7 +37,7 @@ export async function getStaticProps() {
     url:
       "https://sheets.googleapis.com/v4/spreadsheets/1revH4OXNXMVTReYsHjZpHJnNHkNZdZ8YrWoFRg5lpjk/values/Sheet1!A2:H",
     params: {
-      key: process.env.REACT_APP_GOOGLE_API_KEY,
+      key: process.env.GOOGLE_API_KEY,
     },
   })
 
