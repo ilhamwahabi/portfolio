@@ -139,6 +139,7 @@ export default function Home({ works }) {
           href="https://fonts.googleapis.com/css?family=Raleway:300,400"
           rel="stylesheet"
         />
+        <script async defer data-domain="portfolio.iwgx.io" src="https://plausible.io/js/plausible.js" />
         <title>Amazing Things by Ilham Wahabi</title>
       </Head>
 
